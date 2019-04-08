@@ -32,7 +32,8 @@ echo "$INSTALL_DIR/mpc-1.0.3/lib"  >> /etc/ld.so.conf
 ldconfig -v
 
 # Install GCC 6.4.0
-tar xvf gcc-6.4.0.tar.gz
+wget https://ftp.gnu.org/pub/gnu/gcc/gcc-6.4.0/gcc-6.4.0.tar.xz
+tar xvf gcc-6.4.0.tar.xz
 cd gcc-6.4.0
 ./configure --enable-checking=release --enable-languages=c,c++ --disable-multilib \
 						--prefix=$INSTALL_DIR/gcc-6.4.0 --with-gmp=$INSTALL_DIR/gmp-6.1.2 \
