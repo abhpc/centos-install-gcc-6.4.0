@@ -1,4 +1,4 @@
-In stall gcc-6.4.0 on CentOS 6/7.
+Install gcc-6.4.0 on CentOS 6/7.
 Before run this script, you should install some packages:
 
 \# yum install gcc gcc-c++ gfortran glibc
